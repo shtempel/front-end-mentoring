@@ -1,0 +1,33 @@
+.last-project{
+    margin: 10px 0 10px 0;
+}
+
+.last-project-card {
+    display: none;
+    flex-direction: column;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.last-project-item {
+    display: inline-flex;
+    border-top: 1px solid #e5e3e5;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.last-project-card span {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+.left-card-info {
+    color: #333133
+}
+
+.right-card-info {
+    color: #b7bcc0;
+    text-align: right;    
+}

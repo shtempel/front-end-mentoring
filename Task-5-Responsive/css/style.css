@@ -1,0 +1,19 @@
+@import url("../css/controlls/buttons.css");
+@import url("../css/layout/sidebar.css");
+@import url("../css/layout/main-content.css");
+@import url("../css/layout/top-logo.css");
+@import url("../css/layout/cards/last-project-card.css");
+@import url("../css/layout/cards/employee-card.css");
+@import url("../css/misc/utils.css");
+@import url("../css/layout/responsive.css");
+
+html, body {
+    font-family:'Arial';
+    background-color: #f3f1f3;
+}
+
+a, label, input, li {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}

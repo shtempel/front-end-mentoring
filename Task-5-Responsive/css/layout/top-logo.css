@@ -1,0 +1,10 @@
+.logo {
+    text-align: center;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 30px;
+    right: 0;
+    background: url(../../pics/logo-small.jpg) no-repeat white;
+    background-position: center;
+}

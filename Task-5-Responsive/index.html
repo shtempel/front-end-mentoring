@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive</title>
+        <link rel="stylesheet" href="./css/reset-css.css">
+        <link rel="stylesheet" href="./libs/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <input type="checkbox" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="nav-toggle" onclick=""></label>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">EXPERT SEARCH</a></li>
+                <li><a href="#">SAVED EXPERT</a></li>
+                <li class="li-projects"><a href="#">PROJECTS</a></li>
+                <li class="li-consult"><a href="#">CONSULTATIONS</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li class="li-logout"><a href="#">LOGOUT</a></li>                
+                <li class="li-logged"><a href="#"><span class="logged-text" >lOGGED IN AS</span></a><p>Girish Gopalan</p></li>              
+            </ul>
+        </nav>
+        <div class="logo"></div>
+        <div class="main-content-wrapper">
+            <div class="back-link">
+                <a href="#">Projects List</a>
+            </div>
+            <div class="last-project">
+                <a class="export-btn-top">EXPORT</a>
+                <input id="open-last" type="checkbox">
+                <label for="open-last" id="last-btn" class="last-btn">Test Project last</label>               
+                <div class="last-project-card">
+                    <div class="first-card-half">
+                        <div class="last-project-item">
+                            <span>Create date</span>
+                            <span class="right-card-info">01/20/15</span>
+                        </div>
+                        <div class="last-project-item">
+                            <span class="left-card-info">Target industries</span>
+                            <span class="right-card-info">10</span>
+                        </div>
+                        <div class="last-project-item">
+                            <span>Bios sent</span>
+                            <span class="right-card-info">10</span>
+                        </div>
+                        <div class="last-project-item">
+                            <span>Calls scheduled</span>
+                            <span class="right-card-info">2</span>
+                        </div>
+                    </div>
+                    <div class="second-card-half">
+                        <div class="last-project-item">
+                            <span>Requested consultations</span>
+                            <span class="right-card-info">10</span>
+                        </div>
+                        <div class="last-project-item">
+                            <span>Target companies</span>
+                            <span class="right-card-info">Frontier Communications Corporation [FTR]</span>
+                        </div>
+                        <div class="last-project-item">
+                            <span>Calls completed</span>
+                            <span class="right-card-info">2</span>
+                        </div>
+                        <div class="last-project-item">
+                            <span>Calls in scheduling</span>
+                            <span class="right-card-info">1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panels">
+                <input id="experts" type="radio" checked name="tabs">
+                <label class="exp-label " for="experts">EXPERTS</label>
+                <input id="consults" type="radio" name="tabs">
+                <label class="cons-label" for="consults">CONSULTATIONS</label>
+                <div class="wide-div"></div>
+                <div class="experts-panel">
+                    <div class="expert-buttons-panel">
+                        <a class="expand-btn">EXPAND ALL</a>
+                        <a class="export-btn">EXPORT</a>
+                        <div class="div-for-sort">
+                            <a class="new-filters"><i class="fa fa-filter"></i> FILTERS</a>
+                        </div>
+                        <div class="wide-div"></div>
+                        <select class="sort-select">
+                            <option>Sort by Status</option>
+                            <option>Sort by Name</option>
+                            <option>Sort by Date</option>
+                        </select>
+                    </div>
+                    <div class="employee-card">
+                        <div class="employee-info-header">
+                            <input type="checkbox" id="add-toggle" hidden>
+                            <label for="add-toggle"></label>
+                            <div class="employee-title">
+                                <!--                                <label  class="type" for="add-toggle">INDUSTRY EXPERT</label>-->
+                                <span class="type">INDUSTRY EXPERT</span>
+                                <span class="date">07/13/14<span class="new">NEW</span></span>
+                            </div>
+                            <span class="employee-name">Mikhail Semichev</span>
+                            <span class="contractor">GOOGLE</span>
+                            <span class="contr-type">PUBLIC</span>
+                            <span class="employee-position">FE developer<span>(12/01/11 - Present)</span></span>
+                            <div class="additional-info">
+                                <p>
+                                    Premium Rate: This expert'shourly consulting rate exceeds our
+                                    standard rate and would require an additional call debit.
+                                </p>
+                                <p>
+                                    Translator Required: this Expert requires a translator which we can
+                                    coordinate for one additional debit.
+                                </p>
+                                <div class="divider"></div>
+                                <span class="confirmed">Confirmed Availability</span>
+                                <div class="schedule">
+                                    <span style="display: block"> Tuesday 07/21/15 11:00 AM-07:13 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                    <span style="display: block">Monday 07/20/15 07:00 AM-10:00 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-bot-btns">
+                            <label class="member-bottom-span">SCHEDULE</label>
+                            <label class="member-bottom-span">REQUEST INFO</label>
+                            <label class="member-bottom-span">DECLINE</label>
+                        </div>
+                    </div>
+                    <div class="employee-card">
+                        <div class="employee-info-header">
+                            <div class="employee-title">
+                                <span class="type">CUSTOMER</span>
+                                <span class="date">07/13/14<span class="viewed">VIEWED</span></span>
+                            </div>
+                            <span class="employee-name">Mikhail Semichev</span>
+                            <span class="contractor">GOOGLE</span>
+                            <span class="contr-type">PUBLIC</span>
+                            <span class="employee-position">FE developer<span>(12/01/11 - Present)</span></span>
+                            <div class="additional-info">
+                                <p>
+                                    Premium Rate: This expert'shourly consulting rate exceeds our
+                                    standard rate and would require an additional call debit.
+                                </p>
+                                <p>
+                                    Translator Required: this Expert requires a translator which we can
+                                    coordinate for one additional debit.
+                                </p>
+                                <div class="divider"></div>
+                                <span class="confirmed">Confirmed Availability</span>
+                                <div class="schedule">
+                                    <span style="display: block"> Tuesday 07/21/15 11:00 AM-07:13 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                    <span style="display: block">Monday 07/20/15 07:00 AM-10:00 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-bot-btns">
+                            <label class="member-bottom-span">SCHEDULE</label>
+                            <label class="member-bottom-span">REQUEST INFO</label>
+                            <label class="member-bottom-span">DECLINE</label>
+                        </div>
+                    </div>
+                    <div class="employee-card">
+                        <div class="employee-info-header">
+                            <div class="employee-title">
+                                <span class="type">CUSTOMER</span>
+                                <span class="date">07/13/14<span class="viewed">VIEWED</span></span>
+                            </div>
+                            <span class="employee-name">Mikhail Semichev</span>
+                            <span class="contractor">GOOGLE</span>
+                            <span class="contr-type">PUBLIC</span>
+                            <span class="employee-position">FE developer<span>(12/01/11 - Present)</span></span>
+                            <div class="additional-info">
+                                <p>
+                                    Premium Rate: This expert'shourly consulting rate exceeds our
+                                    standard rate and would require an additional call debit.
+                                </p>
+                                <p>
+                                    Translator Required: this Expert requires a translator which we can
+                                    coordinate for one additional debit.
+                                </p>
+                                <div class="divider"></div>
+                                <span class="confirmed">Confirmed Availability</span>
+                                <div class="schedule">
+                                    <span style="display: block"> Tuesday 07/21/15 11:00 AM-07:13 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                    <span style="display: block">Monday 07/20/15 07:00 AM-10:00 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-bot-btns">
+                            <label class="member-bottom-span">SCHEDULE</label>
+                            <label class="member-bottom-span">REQUEST INFO</label>
+                            <label class="member-bottom-span">DECLINE</label>
+                        </div>
+                    </div><div class="employee-card">
+                        <div class="employee-info-header">
+                            <div class="employee-title">
+                                <span class="type">CUSTOMER</span>
+                                <span class="date">07/13/14<span class="viewed">VIEWED</span></span>
+                            </div>
+                            <span class="employee-name">Mikhail Semichev</span>
+                            <span class="contractor">GOOGLE</span>
+                            <span class="contr-type">PUBLIC</span>
+                            <span class="employee-position">FE developer<span>(12/01/11 - Present)</span></span>
+                            <div class="additional-info">
+                                <p>
+                                    Premium Rate: This expert'shourly consulting rate exceeds our
+                                    standard rate and would require an additional call debit.
+                                </p>
+                                <p>
+                                    Translator Required: this Expert requires a translator which we can
+                                    coordinate for one additional debit.
+                                </p>
+                                <div class="divider"></div>
+                                <span class="confirmed">Confirmed Availability</span>
+                                <div class="schedule">
+                                    <span style="display: block"> Tuesday 07/21/15 11:00 AM-07:13 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                    <span style="display: block">Monday 07/20/15 07:00 AM-10:00 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-bot-btns">
+                            <label class="member-bottom-span">SCHEDULE</label>
+                            <label class="member-bottom-span">REQUEST INFO</label>
+                            <label class="member-bottom-span">DECLINE</label>
+                        </div>
+                    </div>
+                    <div class="employee-card">
+                        <div class="employee-info-header">
+                            <div class="employee-title">
+                                <span class="type">CUSTOMER</span>
+                                <span class="date">07/13/14<span class="viewed">VIEWED</span></span>
+                            </div>
+                            <span class="employee-name">Mikhail Semichev</span>
+                            <span class="contractor">GOOGLE</span>
+                            <span class="contr-type">PUBLIC</span>
+                            <span class="employee-position">FE developer<span>(12/01/11 - Present)</span></span>
+                            <div class="additional-info">
+                                <p>
+                                    Premium Rate: This expert'shourly consulting rate exceeds our
+                                    standard rate and would require an additional call debit.
+                                </p>
+                                <p>
+                                    Translator Required: this Expert requires a translator which we can
+                                    coordinate for one additional debit.
+                                </p>
+                                <div class="divider"></div>
+                                <span class="confirmed">Confirmed Availability</span>
+                                <div class="schedule">
+                                    <span style="display: block"> Tuesday 07/21/15 11:00 AM-07:13 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                    <span style="display: block">Monday 07/20/15 07:00 AM-10:00 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-bot-btns">
+                            <label class="member-bottom-span">SCHEDULE</label>
+                            <label class="member-bottom-span">REQUEST INFO</label>
+                            <label class="member-bottom-span">DECLINE</label>
+                        </div>
+                    </div>
+                    <div class="employee-card">
+                        <div class="employee-info-header">
+                            <div class="employee-title">
+                                <span class="type">INDUSTRY EXPERT</span>
+                                <span class="date">07/13/14<span class="new">NEW</span></span>
+                            </div>
+                            <span class="employee-name">Mikhail Semichev</span>
+                            <span class="contractor">GOOGLE</span>
+                            <span class="contr-type">PUBLIC</span>
+                            <span class="employee-position">FE developer<span>(12/01/11 - Present)</span></span>
+                            <div class="additional-info">
+                                <p>
+                                    Premium Rate: This expert'shourly consulting rate exceeds our
+                                    standard rate and would require an additional call debit.
+                                </p>
+                                <p>
+                                    Translator Required: this Expert requires a translator which we can
+                                    coordinate for one additional debit.
+                                </p>
+                                <div class="divider"></div>
+                                <span class="confirmed">Confirmed Availability</span>
+                                <div class="schedule">
+                                    <span style="display: block"> Tuesday 07/21/15 11:00 AM-07:13 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                    <span style="display: block">Monday 07/20/15 07:00 AM-10:00 AM(UTC-05:00)</span>
+                                    <span style="display: block">Eastern Time(US & Canada)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee-bot-btns">
+                            <label class="member-bottom-span">SCHEDULE</label>
+                            <label class="member-bottom-span">REQUEST INFO</label>
+                            <label class="member-bottom-span">DECLINE</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

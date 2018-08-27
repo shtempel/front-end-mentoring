@@ -1,0 +1,123 @@
+.employee-card {
+    border: 1px solid #b0adad;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.employee-info-header {
+    padding: 10px;
+}
+
+.employee-title {
+    height: 20px;
+    margin-bottom: 10px;   
+}
+
+.type {
+    color: red;
+    font-size: 18px;
+    font-weight: normal;
+    height: 18px;
+}
+
+.new, .viewed {
+    color: white;
+    background-color: red;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius:6px;
+    padding: 1px 10px;
+    margin-left: 15px;
+}
+
+.viewed {
+    background-color: gray;
+}
+
+.date {
+    color: graytext;
+    font-size: 11px;
+    line-height: 18px;
+    float: right;
+}
+
+.employee-name{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+} 
+
+.contractor {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.contr-type {
+    font-size: 11px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 6px;
+    padding: 3px 10px 1px 10px;
+    margin-left: 5px;font-weight: bold;   
+}
+
+.employee-position {
+    display: block;
+    font-size: 15px;
+    color: #6b6a6a ;
+}
+.employee-position span {
+    margin-left: 5px;
+    color: #bcb9b9;
+}
+
+.additional-info {
+    margin-top: 10px;
+    color: red;
+    font-size: 13px;
+    padding-bottom: 10px;
+    line-height: 18px;
+}
+.additional-info p:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+.confirmed {
+    display: block;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.schedule {
+    margin: 10px 0 0 20px;
+    line-height: 18px;
+}
+
+.member-bottom-span {
+    background-color: #e3dfdf;
+    display: block;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-top: 1px solid #c1bec1;
+}
+
+.employee-bot-btns label:nth-of-type(1):before,
+.employee-bot-btns label:nth-of-type(2):before,
+.employee-bot-btns label:nth-of-type(3):before{
+    font-family: "FontAwesome";
+    margin-right: 4px;
+}
+
+.employee-bot-btns label:nth-of-type(1):before  {
+    content: "\f095";
+}
+
+.employee-bot-btns label:nth-of-type(2):before  {
+    content: "\f05a";
+}
+
+.employee-bot-btns label:nth-of-type(3):before  {
+    content: " \f00d";
+}

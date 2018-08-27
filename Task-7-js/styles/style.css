@@ -1,0 +1,129 @@
+h3, p,
+.task-one-div, 
+.task-two-div, 
+.task-three-div,
+.input-body,
+.output-body-part-one,
+.output-body-part-two {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.string-field:focus,
+button:focus {
+    outline: none;
+}
+
+.main-div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px;    
+}
+
+.task-one-div, 
+.task-two-div, 
+.task-three-div {
+    border: 1px solid  #c5c2c6;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    width: 30%;
+}
+
+h3 {
+    color: #a3a0a4;
+    width: 100%;
+}
+
+p {
+    background-color: #f7f7f7;
+}
+
+.input-body {
+    flex-flow: row nowrap;
+}
+
+.input-body label {
+    width: 100%;
+}
+
+.input-body div {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-body button {
+    width: 20%; 
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid rgb(169, 169, 169);
+}
+
+.input-body button:active {
+    background-color: gray;
+    color: white;
+}
+.input-body button:hover {
+    cursor: pointer;
+}
+
+.string-field {
+    width: 70%;
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;     
+}
+
+.output-body-part-one,
+.output-body-part-two,
+.output-body-part-three {
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+.result-div {
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.result-div label {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    
+}
+
+.output-body-part-one .before {
+    width: 80%;
+}
+
+.output-body-part-one .after {
+    width: 10%;
+}
+
+.output-body-part-two .result-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+
+.output-body-part-two .before {
+    width: 100%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.output-body-part-two .after {
+    width: 100%;
+    box-sizing: border-box;
+}

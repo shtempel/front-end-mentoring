@@ -1,0 +1,307 @@
+
+/*@media (min-width: 481px) and (max-width: 768px) {
+    header {
+    .top-logo { 
+    width: 20%;
+    padding: 20px 5px;
+    a {
+    background: url(../pics/medium/logo-med.jpg) no-repeat white;
+    background-position: center;
+    background-size: cover;
+    }
+    }
+    
+    .site-nav {
+    width: 60%;
+    order: 1;
+    border: none;
+    margin: auto;
+    }
+    
+    .bb-logo {
+    order: 3;
+    height: 300px;
+    a {
+    height: 10%;
+    }
+    }
+    
+    .subscribe {
+    order: 4;
+    label {
+    width: 10%;
+    }
+    p {
+    width: 90%;
+    }        
+    form {
+    width: 80%;
+    input {
+    width: 75%;
+    }
+    .subscribe-btn {
+    width: 20%;
+    }
+    }
+    }
+    
+    }.main-content {
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }   
+    .topic {
+    width: 45%;
+    }
+    footer {
+    .left {
+    width: 30%;
+    }
+    .right {
+    width: 15%;
+    }
+    }
+    }
+    
+    @media (min-width: 769px) and (max-width: 992px) {
+    header {
+    flex-direction: row;
+    .top-logo { 
+    width: 15%;
+    padding: 20px 5px;
+    a {
+    background: url(../pics/medium/logo-med.jpg) no-repeat white;
+    background-position: center;
+    background-size: cover;
+    }
+    }
+    
+    .site-nav {
+    display: flex;
+    width: 60%;
+    order: 1;
+    border: none;
+    
+    ul {
+    display: flex;
+    align-items: center;
+    }
+    li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    li:before {
+    font-size: 25px;
+    }
+    
+    li:nth-child(1):before {
+    font-family: "FontAwesome";
+    content: "\f02d";
+    }
+    
+    li:nth-child(2):before {
+    font-family: "FontAwesome";
+    content: "\f075";
+    }
+    
+    li:nth-child(2):before {
+    font-family: "FontAwesome";
+    content: "\f075";
+    }
+    
+    li:nth-child(3):before {
+    font-family: "FontAwesome";
+    content: "\f022";
+    }
+    
+    li:nth-child(4):before {
+    font-family: "FontAwesome";
+    content: "\f024";
+    }
+    
+    li:nth-child(5):before {
+    font-family: "FontAwesome";
+    content: "\f021";
+    }
+    } 
+    
+    .bb-logo {
+    order: 3;
+    height: 370px;
+    padding-bottom: 5%;
+    box-sizing: border-box;
+    
+    a {
+    height: 15%;
+    width: 40%;
+    background-color: white;
+    }
+    
+    a:last-child {
+    width: 70%;
+    height: 10%;
+    }
+    }
+    
+    .under-pic-menu {
+    display: flex;
+    order: 4;
+    width: 100%;
+    ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    li:nth-child(2){
+    border-left: 2px solid #a7a7a7;
+    border-right: 2px solid #a7a7a7;
+    }
+    li:nth-child(3){
+    border-right: 2px solid #a7a7a7;
+    }
+    
+    li {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    width: 25%;
+    background-color: #c4c7c7;
+    a {
+    color: #6d6767;
+    }
+    }
+    }
+    }
+    
+    .subscribe {
+    order: 4;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    label {
+    width: 7%;
+    margin-top: -3px;
+    }
+    label:before {
+    font-size: 30px;
+    }
+    p {
+    padding: 0;
+    }
+    
+    form {
+    width: 45%;
+    margin: 0;
+    }
+    }
+    
+    }
+    
+    .main-content {
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0;
+    .topic {
+    width: 23%;
+    }
+    }
+    
+    footer {
+    .left {
+    width: 22%;
+    }
+    .right {
+    width: 15%;
+    }
+    }
+    }
+    
+    @media (min-width: 993px) and (max-width: 1176px) {
+    header {
+    display: flex;
+    flex-direction: row;
+    .top-logo { 
+    width: 15%;
+    padding: 20px 5px;
+    align-self: end;
+    
+    a {
+    background: url(../pics/medium/logo-med.jpg) no-repeat white;
+    background-position: center;
+    background-size: cover;   
+    height: 120px;
+    border-radius: 5px;
+    }
+    }
+    
+    .bb-logo {
+    margin-top: 20px;
+    order: 1;
+    width: 80%;
+    border-radius: 5px;
+    height: 360px;
+    
+    a:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    }
+    
+    }
+    .site-nav {
+    order: 3;
+    width: 15%;
+    border: none;
+    ul {
+    flex-direction: column;
+    li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    }
+    li:before {
+    font-size: 25px;
+    width: 20px;
+    margin-right: 10px;
+    }
+    
+    li:nth-child(1):before {
+    font-family: "FontAwesome";
+    content: "\f02d";
+    }
+    
+    li:nth-child(2):before {
+    font-family: "FontAwesome";
+    content: "\f075";
+    }
+    
+    li:nth-child(2):before {
+    font-family: "FontAwesome";
+    content: "\f075";
+    }
+    
+    li:nth-child(3):before {
+    font-family: "FontAwesome";
+    content: "\f022";
+    }
+    
+    li:nth-child(4):before {
+    font-family: "FontAwesome";
+    content: "\f024";
+    }
+    
+    li:nth-child(5):before {
+    font-family: "FontAwesome";
+    content: "\f021";
+    }
+    }
+    }
+    
+    
+    
+    .subscribe {
+    order: 4;
+    }
+    
+    }
+}*/

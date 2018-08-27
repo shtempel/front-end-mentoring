@@ -1,0 +1,8 @@
+.wide-div {
+    width: 100%;
+}
+
+.divider {
+    border-bottom: 1px solid #c1bec1;
+    margin: 0 -10px;
+}

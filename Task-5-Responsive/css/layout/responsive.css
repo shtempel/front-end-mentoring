@@ -1,0 +1,228 @@
+@media (orientation:landscape ) {
+    .employee-bot-btns {
+        display: flex;
+        width: 100%;
+        flex-flow: row nowrap;
+        align-content: stretch;
+        direction: rtl;
+    }
+
+    .member-bottom-span {
+        margin: 0;
+        width: 34%;
+        text-align: center;  
+        border-top: 1px solid #c1bec1;
+    }
+
+    .employee-bot-btns label:nth-of-type(2) {
+        border-left: 1px solid #c1bec1;
+        border-right: 1px solid #c1bec1;
+    }
+}
+
+
+
+@media (min-width: 750px) and (max-width: 1200px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .logo {
+        width: 30%;
+        height: 120px;
+        left: 0;
+        background: url(../../pics/logo-large.jpg) no-repeat white;
+        background-position: center;
+    }
+
+    .nav {
+        width: 30%;
+        display: block;
+        top: 120px;
+    }
+
+    .main-content-wrapper {
+        margin: 0 0 0 30%;
+        padding: 10px 5%;
+    }
+
+    .export-btn-top {
+        display: block;
+    }
+
+    .export-btn {
+        display: none;
+    }
+
+    .expand-btn {
+        width: 25%;
+    }
+
+    .sort-select {
+        width: 40%;
+        order: 2;
+        margin: 10px 0 10px 0;
+    }
+
+    .filters-btn {
+        width: 25%;
+        order: 3;
+    }
+
+    .div-for-sort {
+        width: 25%;
+        order:3;
+    }
+
+    .wide-div {
+        display: none;
+    }
+
+    .employee-bot-btns {
+        display: flex;
+        width: 100%;
+        flex-flow: row nowrap;
+        align-content: stretch;
+        direction: rtl;
+    }
+
+    .member-bottom-span {
+        margin: 0;
+        width: 34%;
+        text-align: center;  
+        border-top: 1px solid #c1bec1;
+    }
+
+    .employee-bot-btns label:nth-of-type(2) {
+        border-left: 1px solid #c1bec1;
+        border-right: 1px solid #c1bec1;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+        width: 20%;
+        height: 150px;
+        left: 0;
+        background: url(../../pics/logo-large.jpg) no-repeat white;
+        background-position: center;
+    }
+
+    .main-content-wrapper {
+        margin: 0 0 0 20%;
+        padding: 10px 15%;
+    }
+
+    .nav {
+        width: 20%;
+        display: block;
+        top: 150px;
+    }
+
+    .li-consult:after {
+        font-family: "FontAwesome";
+        content: "\f095";
+        color: #b00a31;
+        margin-left: 4px;
+        font-size: 23px;
+    }
+
+    .li-consult:hover:after {
+        color: white;
+    }
+
+    .li-logout:before {
+        color: #b00a31;
+    }
+
+    .li-consult:after {
+        font-family: "FontAwesome";
+        content: "\f095";
+        color: #b00a31;
+        margin-left: 4px;
+        font-size: 23px;
+    }
+
+    .li-consult:hover:after {
+        color: white;
+    }
+
+    .li-logout:before {
+        color: #b00a31;
+    }
+
+    .last-project-card {
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: bold;
+        margin-top: 30px;        
+    }
+
+    .first-card-half,
+    .second-card-half {
+        width:48%;
+    }
+
+    .last-project-item {
+        width:100%;
+    }
+
+    .export-btn-top {
+        display: block;
+        width: 20%;
+    }
+
+    .export-btn {
+        display: none;
+    }
+
+    .expand-btn {
+        width: 20%;
+    }
+
+    .sort-select {
+        width: 55%;
+        order: 2;
+        margin: 10px 0 10px 0;
+    }
+
+    .filters-btn {
+        width: 20%;
+        order: 3;
+    }
+
+    .div-for-sort {
+        width: 20%;
+        order:3;
+    }
+
+    .wide-div {
+        display: none;
+    }
+
+    .employee-bot-btns {
+        display: flex;
+        width: 100%;
+        flex-flow: row nowrap;
+        align-content: stretch;
+        direction: rtl;
+    }
+
+    .member-bottom-span {
+        margin: 0;
+        width: 34%;
+        text-align: center;  
+        border-top: 1px solid #c1bec1;
+    }
+
+    .employee-bot-btns label:nth-of-type(2) {
+        border-left: 1px solid #c1bec1;
+        border-right: 1px solid #c1bec1;
+    }
+}

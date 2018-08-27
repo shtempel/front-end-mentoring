@@ -1,0 +1,41 @@
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 4%;
+    box-sizing: border-box;
+    .topic {
+        display: flex;
+        flex-flow: column;
+        margin: 20px 0;
+        .topic-pic {
+            border: 1px solid #a5a5a5;
+            padding: 5px;   
+            margin-bottom: 10px;
+            &  img {
+                width: 100%;
+            }                     
+        }
+        span {
+            font: $topic-header-font;
+            color: $topic-header-color;           
+        }
+        p {
+            font: $topic-short-font;
+            margin: 10px 0;
+        }
+        span:last-child {
+            color: gray;
+            font: $topic-date-font;
+            a {
+                color: $topic-header-color;
+                border-bottom: 1px dashed #a5a5a5;
+            }
+            a:after { 
+                font-family: "FontAwesome";
+                content: " \f101";
+                font-size: 12px;
+            }
+        }
+    }
+} 

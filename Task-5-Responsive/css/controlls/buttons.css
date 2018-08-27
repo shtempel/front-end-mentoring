@@ -1,0 +1,255 @@
+.nav-toggle {
+    position: fixed;
+    outline: none;
+    display: block;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-toggle:after {
+    content: "\f0c9";
+    font-family: "FontAwesome";
+    font-size: 30px;
+    color: #ad0b33;
+    padding: 4px;
+    margin: 15px;
+}
+
+[id='nav-toggle']:checked ~ .nav {
+    display: block;
+}
+
+.back-link a {
+    font-size: 16px;
+    color: #cbc9cb;
+}
+
+.back-link a:before {
+    content: "\f053";
+    font-family: "FontAwesome";
+    color: #848284;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.last-btn {
+    font-size: 23px;
+    font-weight: bold;
+    color: #333133;
+}
+
+.last-btn:after {
+    content: "\f055";
+    font-family: "FontAwesome";
+    color: #7d7b7d;
+    font-size: 19px;
+    margin-left: 6px;
+}
+
+#open-last, #consults, #experts {
+    display: none;
+}
+
+#open-last:checked ~ #last-btn:after {
+    content: "\f056";
+    font-family: "FontAwesome";
+    color: #7d7b7d;
+}
+
+#open-last:checked ~ .last-project-card {
+    display: flex;
+}
+
+.export-btn-top {
+    display: none;
+    width:25%;   
+    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 0 10px 0;
+    border: 1px solid rgb(234, 231, 231);
+    border-radius: 8px;
+    float:right;
+}
+
+.export-btn-top:before,
+.export-btn:before {
+    font-family: "FontAwesome";
+    content: "\f1c3";    
+    margin-right: 4px;
+}
+
+.exp-label, .cons-label {
+    flex-grow: 1;
+}
+
+.exp-label, .cons-label {
+    font-size: 14px;
+    border: 1px solid #b0adad;
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px;
+    background-color:  #bab8b8;
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.exp-label:after,
+.cons-label:after {
+    color: red;
+}
+
+.exp-label:after {  
+    content: " \f024";
+    font-family: "FontAwesome";
+}
+
+.cons-label:after {
+    content: " \f095";
+    font-family: "FontAwesome";
+}
+
+#experts:checked + .exp-label,
+#consults:checked + .cons-label {
+    color: #555;
+    border: 1px solid #b0adad;
+    background-color:  #f3f1f3;
+    border-bottom: none;
+}
+
+#experts:checked ~ .experts-panel,
+#consults:checked ~ .consults-panel{
+    display: block;
+}
+
+.expand-btn, .export-btn {    
+    font-size: 14px;
+    outline: none;
+    padding: 10px 0 10px 0;
+    border: 1px solid rgb(234, 231, 231);
+    border-radius: 8px;
+    width: 30%;
+    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+    box-sizing: border-box;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+.export-btn-top:before,
+.export-btn:before {
+    font-family: "FontAwesome";
+    content: "\f1c3";    
+    margin-right: 4px;
+}
+
+
+
+.expand-btn, .export-btn, .filters-btn {
+    text-decoration: none;
+    color: #615f5f;
+    font-weight: bold;
+    outline: none;
+}
+
+.expand-btn:active, .export-btn:active, .filters-btn:active {
+    outline: none;
+}
+
+.additional-info {
+    display: none;
+}
+
+.employee-info-header:hover  {
+    cursor: pointer;
+}
+
+.employee-info-header:active .additional-info,
+.employee-info-header:hover .additional-info {
+    display: block;
+}
+
+[id='add-toggle']:checked ~ .additional-info {
+    display: block;
+}
+
+
+.additional-info:hover {
+    display: block;
+}
+
+.expand-btn:active, 
+.export-btn:active,
+.export-btn-top:active,
+.new-filters:active {
+    outline: none;
+    background: linear-gradient(to top, rgb(255,255,255), rgb(240,240,240));
+    color: gray;
+}
+.new-filters:active:before,
+.new-filters:active:after {
+    background: linear-gradient(to top left, rgb(255,255,255), rgb(240,240,240));
+}
+
+.new-filters:active span {
+    color: gray;
+}
+
+.div-for-sort {
+    padding: 10px 0 10px 0;
+    width: 30%;
+}
+
+.new-filters {
+    padding: 10px 0 10px 0;
+    position: relative;
+    background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+    border: 1px solid rgb(234, 231, 231);
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    float: right;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.new-filters:after,
+.new-filters:before {
+    z-index: -1;
+    content: '';
+    position: absolute; 
+    left: -14px;    
+    float: left;
+    top: 13%;
+    background: linear-gradient(to bottom right, rgb(255,255,255), rgb(240,240,240));
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    border-left: 1px solid rgb(234, 231, 231);
+    border-bottom: 1px solid rgb(234, 231, 231);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 3px;
+}
+
+.new-filters:before {
+    z-index: 1;
+    box-shadow: none;
+}
+
+.new-filters {
+    
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    color: #615f5f;
+    font-weight: bold;
+    z-index: 10;
+}
